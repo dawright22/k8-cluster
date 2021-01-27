@@ -19,7 +19,7 @@ module "Cluster_AKS" {
   source       = "./Cluster_AKS"
   cluster-name = random_pet.name.id
   appId        = ""
-  password     =  ""
+  password     = ""
 }
 
 #Google
