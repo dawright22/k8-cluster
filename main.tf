@@ -18,8 +18,8 @@ module "Cluster_EKS" {
 module "Cluster_AKS" {
   source       = "./Cluster_AKS"
   cluster-name = random_pet.name.id
-  appId        = "05419517-31a2-48e0-bb47-89924dc8c0d3"
-  password     =  "wm-6c1Gg4SxY8tmLB59mQbZss1d84_.mvW"
+  appId        = ""
+  password     =  ""
 }
 
 #Google
@@ -28,5 +28,5 @@ module "Cluster_GKE" {
   cluster_name = random_pet.name.id
   gcp_region   = "australia-southeast1"
   gcp_zone     = "australia-southeast1-c"
-  gcp_project  = "dwright-gcp-demos"
+  gcp_project  = ""
 }
