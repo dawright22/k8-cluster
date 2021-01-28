@@ -28,15 +28,6 @@ resource "google_container_cluster" "k8sexample" {
       "https://www.googleapis.com/auth/monitoring"
     ]
   }
-
-  provisioner "local-exec" {
-    # Load credentials to local environment so subsequent kubectl commands can be run
-    command = <<EOS
-      gcloud container clusters get-credentials ${var.cluster_name} --zone ${var.gcp_zone} --project ${var.gcp_project}; 
-
-EOS
-
-  }
 }
 
 
