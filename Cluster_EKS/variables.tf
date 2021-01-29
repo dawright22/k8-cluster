@@ -7,7 +7,7 @@ variable "cluster-name" {
 }
 
 variable "aws_region" {
-  default     = "ap-southeast-2"
+  default     = "us-east-1"
   type        = string
   description = "aws region"
 }
