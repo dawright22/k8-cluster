@@ -12,10 +12,15 @@ variable "gcp_project" {
   description = "GCP project name"
   default     = ""
 }
+
 variable "aws_region" {
   default     = ""
   type        = string
   description = "aws region"
+}
+
+variable "location" {
+  default = ""
 }
 
 variable "appId" {
