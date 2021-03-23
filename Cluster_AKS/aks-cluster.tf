@@ -24,12 +24,6 @@ resource "azurerm_kubernetes_cluster" "default" {
     os_disk_size_gb = 30
   }
 
-#  default_node_pool {
-#     name       = "default"
-#     node_count = 1
-#     vm_size    = "Standard_D2_v2"
-#   }
-
   service_principal {
     client_id     = var.appId
     client_secret = var.password
